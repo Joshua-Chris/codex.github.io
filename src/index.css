@@ -9,6 +9,8 @@
 @layer base {
     body {
         @apply font-[Raleway];
+        @apply bg-gray-900;
+        @apply text-white;
     }
     li {
         @apply px-3;

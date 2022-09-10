@@ -10,13 +10,13 @@ const Navbar = () => {
             <h1 className='font-bold text-2xl hover:text-blue-400 cursor-pointer'>CodeX</h1>
         </div>
         <ul className='hidden md:flex pl-7'>
-            <li>Actions</li>
-            <li>Packages</li>
-            <li>Code spaces</li>
-            <li>Copilot</li>
+            <li>Doc</li>
+            <li>Versions</li>
+            <li>CodeX spaces</li>
+            <li>Extensions</li>
             <li>Code review</li>
-            <li>Issues</li>
-            <li>Discussions</li>
+            <li>About</li>
+            <li>Join</li>
         </ul>
         {/* Hamburger menu */}
         <div onClick={navClick} className='md:hidden z-10'>
@@ -24,13 +24,13 @@ const Navbar = () => {
         </div>
         {/* MOBILE MENU */}
         <ul className={!nav ? 'hidden' : 'absolute top-2 flex flex-col w-full h-screen justify-center items-center bg-gray-900 md:hidden'}>
-            <li className='flex justify-center items-center group py-4 text-2xl'>Actions <span className='invisible duration-75 group-hover:visible'><HiChevronRight size={25}  className='pl-1 text-gray-400' /></span></li>
-            <li className='flex justify-center items-center group py-4 text-2xl'>Packages <span className='invisible duration-75 group-hover:visible'><HiChevronRight size={25}  className='pl-1 text-gray-400' /></span></li>
-            <li className='flex justify-center items-center group py-4 text-2xl'>Code spaces <span className='invisible duration-75 group-hover:visible'><HiChevronRight size={25}  className='pl-1 text-gray-400' /></span></li>
-            <li className='flex justify-center items-center group py-4 text-2xl'>Copilot <span className='invisible duration-75 group-hover:visible'><HiChevronRight size={25}  className='pl-1 text-gray-400' /></span></li>
+            <li className='flex justify-center items-center group py-4 text-2xl'>Doc <span className='invisible duration-75 group-hover:visible'><HiChevronRight size={25}  className='pl-1 text-gray-400' /></span></li>
+            <li className='flex justify-center items-center group py-4 text-2xl'>Versions <span className='invisible duration-75 group-hover:visible'><HiChevronRight size={25}  className='pl-1 text-gray-400' /></span></li>
+            <li className='flex justify-center items-center group py-4 text-2xl'>CodeX spaces <span className='invisible duration-75 group-hover:visible'><HiChevronRight size={25}  className='pl-1 text-gray-400' /></span></li>
+            <li className='flex justify-center items-center group py-4 text-2xl'>Extensions <span className='invisible duration-75 group-hover:visible'><HiChevronRight size={25}  className='pl-1 text-gray-400' /></span></li>
             <li className='flex justify-center items-center group py-4 text-2xl'>Code review <span className='invisible duration-75 group-hover:visible'><HiChevronRight size={25}  className='pl-1 text-gray-400' /></span></li>
-            <li className='flex justify-center items-center group py-4 text-2xl'>Issues <span className='invisible duration-75 group-hover:visible'><HiChevronRight size={25}  className='pl-1 text-gray-400' /></span></li>
-            <li className='flex justify-center items-center group py-4 text-2xl'>Discussions <span className='invisible duration-75 group-hover:visible'><HiChevronRight size={25}  className='pl-1 text-gray-400' /></span></li>
+            <li className='flex justify-center items-center group py-4 text-2xl'>About <span className='invisible duration-75 group-hover:visible'><HiChevronRight size={25}  className='pl-1 text-gray-400' /></span></li>
+            <li className='flex justify-center items-center group py-4 text-2xl'>Join <span className='invisible duration-75 group-hover:visible'><HiChevronRight size={25}  className='pl-1 text-gray-400' /></span></li>
         </ul>
 
     </div>

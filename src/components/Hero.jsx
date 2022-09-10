@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import { HiChevronRight, HiArrowRight } from 'react-icons/hi'
+import HeroBg from '../assets/drawing-tablet.png'
+import HeroImg from '../assets/hero-img.PNG'
 
 const Hero = () => {
   const [btnAngle, setBtnAngle] = useState(false)
@@ -12,6 +14,11 @@ const Hero = () => {
             <button onMouseOver={mouseOver} onMouseOut={mouseOver}>Get Started 
                 {!btnAngle ? <HiChevronRight size={25} className='pl-1' /> : <HiArrowRight size={22} className='pl-1'/>}
             </button>
+        </div>
+        <div className='w-full h-screen flex flex-col justify-center items-center py-4 bg-no-repeat bg-center bg-contain md:bg-cover' style={{ backgroundImage: `url(${HeroBg})` }}>
+            <div className='w-[90%] md:w-[80%] mx-auto'>
+                <img src={HeroImg} alt="Hero code" className='rounded-xl shadow-2xl shadow-indigo-600' />
+            </div>
         </div>
     </div>
   )
