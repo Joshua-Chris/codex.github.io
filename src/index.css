@@ -7,27 +7,42 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap'); */
 
 @layer base {
-    body {
-        @apply font-[Raleway];
-        @apply bg-gray-900;
-        @apply text-white;
-    }
-    li {
-        @apply px-3;
-        @apply cursor-pointer;
-        @apply hover:text-blue-400;
-    }
-    button {
-        @apply flex;
-        @apply justify-center;
-        @apply items-center;
-        @apply bg-blue-600;
-        @apply text-white;
-        @apply py-3;
-        @apply px-8;
-        @apply drop-shadow-md;
-        @apply rounded-md;
-        @apply hover:shadow-lg;
-        @apply hover:shadow-blue-600/50;
-    }
+  body {
+    @apply font-[Raleway];
+    /* @apply bg-gray-900;
+    @apply text-white; */
+  }
+  li,
+  .link {
+    @apply px-3;
+    @apply cursor-pointer;
+    @apply hover:text-blue-400;
+  }
+  button {
+    @apply flex;
+    @apply justify-center;
+    @apply items-center;
+    @apply bg-blue-600;
+    @apply text-white;
+    @apply py-3;
+    @apply px-8;
+    @apply drop-shadow-md;
+    @apply rounded-md;
+    @apply hover:shadow-lg;
+    @apply hover:shadow-blue-600/50;
+  }
+  .btn {
+    @apply flex;
+    @apply justify-center;
+    @apply items-center;
+    @apply bg-blue-600;
+    @apply text-white;
+    @apply py-5;
+    @apply px-12;
+    @apply m-4;
+    @apply drop-shadow-md;
+    @apply rounded-md;
+    @apply hover:shadow-lg;
+    @apply hover:shadow-blue-600/50;
+  }
 }

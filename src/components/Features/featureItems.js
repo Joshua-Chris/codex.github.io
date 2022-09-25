@@ -1,6 +1,6 @@
-import image1 from '../assets/featurea.png'
-import image2 from '../assets/featureb.png'
-import image3 from '../assets/featurec.png'
+import image1 from '../../assets/featurea.png'
+import image2 from '../../assets/featureb.png'
+import image3 from '../../assets/featurec.png'
 
 export const featureItems = [
     {
