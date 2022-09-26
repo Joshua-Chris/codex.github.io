@@ -6,9 +6,10 @@ import Terminal from '../components/Terminal/Terminal';
 const App = () => {
   return (
     <>
-      <NavbarWhite />
+      {/* <NavbarWhite />
       <HeroCenter />
-      <Terminal />
+      <Terminal /> */}
+      <div className="flex justify-center items-center">Under Construction</div>
     </>
   );
 };
