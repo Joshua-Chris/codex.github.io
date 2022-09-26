@@ -37,12 +37,23 @@
     @apply items-center;
     @apply bg-blue-600;
     @apply text-white;
-    @apply py-5;
-    @apply px-12;
+    @apply py-4;
+    @apply px-10;
     @apply m-4;
     @apply drop-shadow-md;
     @apply rounded-md;
+  }
+  .btn__T {
+    @apply flex;
+    @apply justify-center;
+    @apply items-center;
+    @apply text-white;
+    @apply py-2;
+    @apply bg-gray-800;
+    @apply rounded-none;
+    @apply hover:bg-gray-700;
     @apply hover:shadow-lg;
-    @apply hover:shadow-blue-600/50;
+    @apply hover:border-t-[.2px];
+    @apply hover:border-zinc-400;
   }
 }

@@ -22,7 +22,11 @@ const HeroCenter = () => {
           within your organization or with the entire world.
         </p>
         <div className="flex">
-          <button onClick={changeIcon} className="btn bg-blue-800">
+          <button
+            onMouseEnter={changeIcon}
+            onMouseLeave={changeIcon}
+            className="btn bg-blue-800"
+          >
             Get started{' '}
             {!icon ? (
               <FiChevronRight className="text-2xl" />

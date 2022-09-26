@@ -20,7 +20,7 @@ const NavbarWhite = () => {
           <Link className="link" to="/documentation">
             Doc
           </Link>
-          <Link className="link" to="/versions">
+          {/* <Link className="link" to="/versions">
             Versions
           </Link>
           <Link className="link" to="/extensions">
@@ -28,11 +28,14 @@ const NavbarWhite = () => {
           </Link>
           <Link className="link" to="/codereview">
             Code review
-          </Link>
+          </Link> */}
           <Link className="link" to="/about">
             About
           </Link>
-          <Link className="link" to="/join">
+          <Link
+            className="link border-red-600 border-l-4 hover:shadow-md"
+            to="/join"
+          >
             Join
           </Link>
         </ul>
