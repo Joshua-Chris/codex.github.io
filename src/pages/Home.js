@@ -6,10 +6,12 @@ import Terminal from '../components/Terminal/Terminal';
 const App = () => {
   return (
     <>
-      {/* <NavbarWhite />
+      <NavbarWhite />
       <HeroCenter />
-      <Terminal /> */}
-      <div className="flex justify-center items-center">Under Construction</div>
+      <Terminal />
+      <div className="w-screen text-2xl text-gray-700 flex justify-center items-center">
+        Under Construction {':)'}
+      </div>
     </>
   );
 };
