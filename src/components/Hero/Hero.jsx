@@ -7,7 +7,7 @@ const Hero = () => {
   const [btnAngle, setBtnAngle] = useState(false);
   const mouseOver = () => setBtnAngle(!btnAngle);
   return (
-    <div className="bg-gray-900 text-white">
+    <div className="w-screen bg-[#0D131D] text-white">
       <div className="w-full h-[90vh] p-5 flex flex-col justify-center items-center">
         <h1 className="text-5xl lg:text-7xl text-center font-extrabold max-w-3xl md:max-w-5xl">
           A Torrent of fast cloud developer environments

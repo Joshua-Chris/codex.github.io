@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import UnderConstruction from '../components/Construction/UnderConstruction';
+import Footer from '../components/Footer/Footer';
+import NavbarWhite from '../components/Navbar/NavbarWhite';
 
 const Versions = () => {
   return (
-    <div>Versions</div>
-  )
-}
+    <div>
+      <NavbarWhite />
+      <UnderConstruction pageName={'Versions page'} />
+      <Footer />
+    </div>
+  );
+};
 
-export default Versions
+export default Versions;

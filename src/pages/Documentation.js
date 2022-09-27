@@ -3,6 +3,7 @@ import Hero from '../components/Hero/Hero';
 import Navbar from '../components/Navbar/Navbar';
 import Feature from '../components/Features/Feature';
 import { featureItems } from '../components/Features/featureItems';
+import Footer from '../components/Footer/Footer';
 
 const Documentation = () => {
   return (
@@ -18,6 +19,7 @@ const Documentation = () => {
           />
         ))}
       </div>
+      <Footer />
     </>
   );
 };

@@ -7,7 +7,7 @@ const Navbar = () => {
   const navClick = () => setNav(!nav);
   return (
     <>
-      <div className="z-10 fixed w-screen sticky top-0 h-[80px] flex text-sm items-center p-5 bg-gray-900 text-white drop-shadow-lg justify-between md:justify-start">
+      <div className="z-10 fixed w-screen sticky top-0 h-[80px] flex text-sm items-center p-5 bg-[#0D131D] text-white drop-shadow-lg justify-between md:justify-start">
         <div className="flex z-10">
           <Link
             to="/"

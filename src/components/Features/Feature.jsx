@@ -2,7 +2,7 @@ import React from 'react';
 
 const Feature = ({ header, textContent, imgUrl }) => {
   return (
-    <div className="bg-gray-900 text-white w-full md:h-fit grid sm:grid-cols-1 md:grid-cols-2 place-items-center p-20">
+    <div className="bg-[#0D131D] text-white w-screen md:h-fit grid sm:grid-cols-1 md:grid-cols-2 place-items-center p-20">
       <div>
         <h1 className="text-4xl lg:text-5xl font-bold md:max-w-5xl">
           {header}

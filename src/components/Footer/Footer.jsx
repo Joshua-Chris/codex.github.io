@@ -7,7 +7,9 @@ const Footer = () => {
     <>
       <div className="flex flex-col sm:flex-row px-10 sm:px-0 w-screen bg-gray-50 items-center justify-around pt-10 py-5 text-sm">
         <div className="flex flex-col gap-2">
-          <h1 className="font-bold text-3xl">CodeX</h1>
+          <h1 className="font-bold text-3xl">
+            <Link to="/">CodeX</Link>
+          </h1>
           <p className="font-medium">Subscribe to newsletter</p>
           <p className="text-gray-400">
             Get product updates, company news, and more.
@@ -16,11 +18,16 @@ const Footer = () => {
             Subscribe
           </button>
         </div>
-        <div>
+        <div className="flex flex-col sm:flex-row items-center sm:items-start justify-around gap-5">
           <ul className="flex flex-row sm:flex-col gap-3 text-gray-400">
             <Link to="/about">About CodeX</Link>
             <Link to="/join">Get Started</Link>
             <Link to="/documentation">Documentation</Link>
+          </ul>
+          <ul className="flex flex-row sm:flex-col gap-3 text-gray-400">
+            <Link to="/codereview">Code Review</Link>
+            <Link to="/codexspace">CodeX Space</Link>
+            <Link to="/extensions">Extensions</Link>
           </ul>
         </div>
       </div>
@@ -31,7 +38,7 @@ const Footer = () => {
             <Link to="/documentation">Terms</Link>
           </li>
           <li>
-            <Link to="/documentation">Site Map</Link>
+            <Link to="/versions">Site Map</Link>
           </li>
         </ul>
         <ul className="flex items-center gap-2">
