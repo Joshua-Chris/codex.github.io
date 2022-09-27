@@ -7,6 +7,7 @@ import Documentation from './pages/Documentation';
 import Extensions from './pages/Extensions';
 import Join from './pages/Join';
 import Versions from './pages/Versions';
+import CodexSpace from './pages/CodexSpace';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/codereview" element={<CodeReview />} />
           <Route path="/documentation" element={<Documentation />} />
+          <Route path="/codexspace" element={<CodexSpace />} />
           <Route path="/extensions" element={<Extensions />} />
           <Route path="/join" element={<Join />} />
           <Route path="/versions" element={<Versions />} />

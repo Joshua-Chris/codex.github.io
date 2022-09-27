@@ -3,7 +3,7 @@ import UnderConstruction from '../components/Construction/UnderConstruction';
 import Footer from '../components/Footer/Footer';
 import NavbarWhite from '../components/Navbar/NavbarWhite';
 
-const codexSpace = () => {
+const CodexSpace = () => {
   return (
     <div>
       <NavbarWhite />
@@ -13,4 +13,4 @@ const codexSpace = () => {
   );
 };
 
-export default codexSpace;
+export default CodexSpace;
