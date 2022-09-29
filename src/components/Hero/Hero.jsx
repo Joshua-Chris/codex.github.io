@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { HiChevronRight, HiArrowRight } from 'react-icons/hi';
-import HeroBg from '../../assets/drawing-tablet.png';
+// import HeroBg from '../../assets/drawing-tablet.png';
 import HeroImg from '../../assets/hero-img.PNG';
 
 const Hero = () => {
   const [btnAngle, setBtnAngle] = useState(false);
   const mouseOver = () => setBtnAngle(!btnAngle);
   return (
-    <div className="w-screen bg-[#0D131D] text-white">
+    <div className="w-screen bg-[#1B1F24] text-white">
       <div className="w-full h-[90vh] p-5 flex flex-col justify-center items-center">
         <h1 className="text-5xl lg:text-7xl text-center font-extrabold max-w-3xl md:max-w-5xl">
           A Torrent of fast cloud developer environments
@@ -24,11 +24,8 @@ const Hero = () => {
           )}
         </button>
       </div>
-      <div
-        className="w-full h-screen flex flex-col justify-center items-center py-4 bg-no-repeat bg-center bg-contain md:bg-cover"
-        style={{ backgroundImage: `url(${HeroBg})` }}
-      >
-        <div className="w-[90%] md:w-[80%] mx-auto">
+      <div className="w-full bg-[#1B1F24] h-screen flex flex-col justify-center items-center py-4 bg-no-repeat bg-center bg-contain md:bg-cover">
+        <div className="w-[90%] md:w-[70%] mx-auto">
           <img
             src={HeroImg}
             alt="Hero code"

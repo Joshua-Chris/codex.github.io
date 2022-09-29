@@ -51,48 +51,69 @@ const NavbarWhite = () => {
               : 'absolute top-2 flex flex-col w-full h-screen justify-center items-center bg-white md:hidden'
           }
         >
-          <li className="flex justify-center items-center group py-4 text-2xl">
+          <Link
+            to="documentation"
+            className="flex justify-center items-center group py-4 text-2xl"
+          >
             Doc{' '}
             <span className="invisible duration-75 group-hover:visible">
               <HiChevronRight size={25} className="pl-1 text-gray-400" />
             </span>
-          </li>
-          <li className="flex justify-center items-center group py-4 text-2xl">
+          </Link>
+          <Link
+            to="versions"
+            className="flex justify-center items-center group py-4 text-2xl"
+          >
             Versions{' '}
             <span className="invisible duration-75 group-hover:visible">
               <HiChevronRight size={25} className="pl-1 text-gray-400" />
             </span>
-          </li>
-          <li className="flex justify-center items-center group py-4 text-2xl">
+          </Link>
+          <Link
+            to="codexspace"
+            className="flex justify-center items-center group py-4 text-2xl"
+          >
             CodeX spaces{' '}
             <span className="invisible duration-75 group-hover:visible">
               <HiChevronRight size={25} className="pl-1 text-gray-400" />
             </span>
-          </li>
-          <li className="flex justify-center items-center group py-4 text-2xl">
+          </Link>
+          <Link
+            to="extensions"
+            className="flex justify-center items-center group py-4 text-2xl"
+          >
             Extensions{' '}
             <span className="invisible duration-75 group-hover:visible">
               <HiChevronRight size={25} className="pl-1 text-gray-400" />
             </span>
-          </li>
-          <li className="flex justify-center items-center group py-4 text-2xl">
+          </Link>
+          <Link
+            to="codereview"
+            className="flex justify-center items-center group py-4 text-2xl"
+          >
             Code review{' '}
             <span className="invisible duration-75 group-hover:visible">
               <HiChevronRight size={25} className="pl-1 text-gray-400" />
             </span>
-          </li>
-          <li className="flex justify-center items-center group py-4 text-2xl">
+          </Link>
+          <Link
+            to="about"
+            className="flex justify-center items-center group py-4 text-2xl"
+          >
             About{' '}
             <span className="invisible duration-75 group-hover:visible">
               <HiChevronRight size={25} className="pl-1 text-gray-400" />
             </span>
-          </li>
-          <li className="flex justify-center items-center group py-4 text-2xl">
+          </Link>
+          <Link
+            to="join"
+            className="flex justify-center items-center group py-4 text-2xl"
+          >
             Join{' '}
             <span className="invisible duration-75 group-hover:visible">
               <HiChevronRight size={25} className="pl-1 text-gray-400" />
             </span>
-          </li>
+          </Link>
         </ul>
       </div>
     </>
