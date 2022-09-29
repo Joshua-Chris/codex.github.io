@@ -24,7 +24,7 @@ const Hero = () => {
           )}
         </button>
       </div>
-      <div className="w-full bg-[#1B1F24] h-screen flex flex-col justify-center items-center py-4 bg-no-repeat bg-center bg-contain md:bg-cover">
+      <div className="w-screen bg-[#1B1F24] h-full flex flex-col justify-center items-center pb-20 bg-no-repeat bg-center bg-contain md:bg-cover">
         <div className="w-[90%] md:w-[70%] mx-auto">
           <img
             src={HeroImg}
