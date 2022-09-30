@@ -18,25 +18,13 @@ const NavbarWhite = () => {
         </div>
         <ul className="hidden md:flex pl-7">
           <Link className="link" to="/documentation">
-            Doc
-          </Link>
-          {/* <Link className="link" to="/versions">
-            Versions
-          </Link>
-          <Link className="link" to="/extensions">
-            Extensions
-          </Link>
-          <Link className="link" to="/codereview">
-            Code review
-          </Link> */}
-          <Link className="link" to="/about">
-            About
+            Documentation
           </Link>
           <Link
             className="link border-red-600 border-l-4 hover:shadow-md"
-            to="/join"
+            to="/apply"
           >
-            Join
+            Get Started
           </Link>
         </ul>
         {/* Hamburger menu */}

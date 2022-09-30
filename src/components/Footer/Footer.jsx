@@ -5,33 +5,33 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 const Footer = () => {
   return (
     <>
-      <div className="flex flex-col sm:flex-row px-10 sm:px-0 w-screen bg-gray-50 items-center justify-around pt-10 py-5 text-sm">
-        <div className="flex flex-col gap-2">
+      <div className="flex flex-col sm:flex-row px-10 sm:px-0 w-screen bg-gray-700 items-center justify-around pt-10 py-5 text-sm">
+        <div className="flex flex-col gap-2 text-gray-50">
           <h1 className="font-bold text-3xl">
             <Link to="/">CodeX</Link>
           </h1>
           <p className="font-medium">Subscribe to newsletter</p>
-          <p className="text-gray-400">
+          <p className="text-gray-300">
             Get product updates, company news, and more.
           </p>
-          <button className="btn bg-transparent mx-0 hover:shadow-transparent font-bold hover:font-normal text-blue-800 border-gray-300 border-[1px]">
+          <button className="btn bg-transparent mx-0 hover:shadow-transparent font-bold hover:font-normal text-blue-400 border-gray-300 border-[1px]">
             Subscribe
           </button>
         </div>
         <div className="flex flex-col sm:flex-row items-center sm:items-start justify-around gap-5">
-          <ul className="flex flex-row sm:flex-col gap-3 text-gray-400">
+          <ul className="flex flex-row sm:flex-col gap-3 text-gray-300">
             <Link to="/about">About CodeX</Link>
             <Link to="/join">Get Started</Link>
             <Link to="/documentation">Documentation</Link>
           </ul>
-          <ul className="flex flex-row sm:flex-col gap-3 text-gray-400">
+          <ul className="flex flex-row sm:flex-col gap-3 text-gray-300">
             <Link to="/codereview">Code Review</Link>
             <Link to="/codexspace">CodeX Space</Link>
             <Link to="/extensions">Extensions</Link>
           </ul>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row gap-3 w-screen py-5 items-center justify-around bg-gray-700 text-white text-sm">
+      <div className="flex flex-col sm:flex-row gap-3 w-screen py-5 items-center justify-around bg-[#1B1F24] text-white text-sm">
         <ul className="flex">
           <li>© 2022 CodeX, Inc.</li>
           <li>

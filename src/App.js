@@ -8,6 +8,7 @@ import Extensions from './pages/Extensions';
 import Join from './pages/Join';
 import Versions from './pages/Versions';
 import CodexSpace from './pages/CodexSpace';
+import Apply from './pages/Apply';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/extensions" element={<Extensions />} />
           <Route path="/join" element={<Join />} />
           <Route path="/versions" element={<Versions />} />
+          <Route path="/apply" element={<Apply />} />
         </Routes>
       </div>
     </>

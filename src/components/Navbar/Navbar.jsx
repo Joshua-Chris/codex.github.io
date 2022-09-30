@@ -3,11 +3,31 @@ import { HiMenu, HiMenuAlt1, HiChevronRight } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+  // Mobile Nav
   const [nav, setNav] = useState(false);
   const navClick = () => setNav(!nav);
+
+  // Change nav color onScroll
+  const [color, setColor] = useState(false);
+  const changeColor = () => {
+    if (window.scrollY >= 400) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+
+  window.addEventListener('scroll', changeColor);
+
   return (
     <>
-      <div className="z-10 fixed w-screen sticky top-0 h-[80px] flex text-sm items-center p-5 bg-[#1B1F24] text-white drop-shadow-lg justify-between md:justify-start">
+      <div
+        className={
+          color
+            ? 'z-10 fixed w-screen sticky top-0 h-[80px] flex text-sm items-center p-5 bg-[#1B1F24] text-white drop-shadow-lg justify-between md:justify-start'
+            : 'z-10 fixed w-screen sticky top-0 h-[80px] flex text-sm items-center p-5 bg-[#4a148c] text-white drop-shadow-lg justify-between md:justify-start'
+        }
+      >
         <div className="flex z-10">
           <Link
             to="/"
@@ -18,25 +38,13 @@ const Navbar = () => {
         </div>
         <ul className="hidden md:flex pl-7">
           <Link className="link" to="/documentation">
-            Doc
-          </Link>
-          {/* <Link className="link" to="/versions">
-            Versions
-          </Link>
-          <Link className="link" to="/extensions">
-            Extensions
-          </Link>
-          <Link className="link" to="/codereview">
-            Code review
-          </Link> */}
-          <Link className="link" to="/about">
-            About
+            Documentation
           </Link>
           <Link
             className="link border-red-600 border-l-4 hover:shadow-md"
-            to="/join"
+            to="/apply"
           >
-            Join
+            Get Started
           </Link>
         </ul>
         {/* Hamburger menu */}

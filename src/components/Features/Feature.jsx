@@ -2,7 +2,7 @@ import React from 'react';
 
 const Feature = ({ header, textContent, imgUrl }) => {
   return (
-    <div className="w-screen h-screen md:h-full bg-[#1B1F24] text-white">
+    <div className="w-screen h-screen md:h-full text-white">
       <div className="w-screen md:h-[62vh] flex justify-center items-center">
         <div className="basis-2/4">
           <h1 className="text-4xl lg:text-5xl font-bold md:max-w-3xl">
