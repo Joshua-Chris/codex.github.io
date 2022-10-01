@@ -28,8 +28,8 @@
     @apply px-8;
     @apply drop-shadow-md;
     @apply rounded-md;
+    @apply shadow-black;
     @apply hover:shadow-lg;
-    @apply hover:shadow-blue-600/50;
   }
   .btn {
     @apply flex;

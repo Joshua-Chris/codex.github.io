@@ -1,70 +1,48 @@
 import React from 'react';
+import label from '../../assets/label.webp';
 
 const AccountRequest = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-around items-center w-screen h-screen bg-gradient-to-b from-[#4a148c] via-[#1B1F24] to-[#1B1F24]">
-        <div className="basis-3/6 bg-slate-700">
-          <h1>Codex API Portal</h1>
+      <div className="flex flex-col sm:flex-row justify-around items-center w-screen h-screen bg-transparent">
+        <div className="w-screen basis-3/6 flex justify-center items-center hidden md:block">
+          <img
+            src={label}
+            alt="CodeX label"
+            className="w-10/12 h-full sm:w-full"
+          />
         </div>
         <div
           name="contact"
-          className="w-full h-screen flex basis-2/6 justify-center items-center p-4 pb-0"
+          className="w-fit h-screen basis-2/6 flex justify-center items-center px-7 pb-0 shadow-[#0000004b] shadow-lg"
         >
           <form
             method="POST"
             action="https://getform.io/f/e9a2c4a7-5310-4746-886b-b2bff36c75e4"
             className="flex flex-col max-w-[600px] w-full"
           >
-            <div className="pb-1">
-              <p className="text-4xl font-bold inline border-b-4 border-blue-600 text-gray-300">
-                CodeX Api Access
+            <div className="pb-8">
+              <p className="text-4xl md:text-[42px] font-extrabold inline border-b-4 border-blue-600 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+                CodeX Developers
               </p>
-              <p className="text-gray-300 py-4">
-                Submit Application - Get an account
+              <p className="text-gray-200 py-4">
+                CodeX account application for developers
               </p>
             </div>
-            <label
-              htmlFor="name"
-              className="text-gray-300 text-lg mb-2 mt-3 border-gray-300 border-t-4 w-fit"
-            >
-              Full Name
-            </label>
             <input
-              className="bg-gray-50 text-black font-bold p-2 rounded-lg"
+              className="bg-[#ccd6f6] bg-opacity-20 border-none outline-none text-white font-bold p-2 rounded-lg"
               type="text"
-              placeholder="Name"
+              placeholder="Nickname"
               name="name"
-              id="name"
             />
-            <label
-              htmlFor="email"
-              className="text-gray-300 text-lg mb-2 mt-3 border-gray-300 border-t-4 w-fit"
-            >
-              Email Address
-            </label>
             <input
-              className="p-2 bg-gray-50 text-black font-bold rounded-lg"
+              className="my-4 p-2 bg-[#ccd6f6] bg-opacity-20 border-none outline-none text-white font-bold rounded-lg"
               type="email"
               placeholder="Email"
               name="email"
-              id="email"
             />
-            <label
-              htmlFor="message"
-              className="text-gray-300 text-lg mb-2 mt-3 border-gray-300 border-t-4 w-fit"
-            >
-              Full Name
-            </label>
-            <textarea
-              className="bg-gray-50 text-black font-bold p-2 rounded-lg"
-              name="message"
-              rows="3"
-              placeholder="Message"
-              id="message"
-            ></textarea>
-            <button className="w-full text-white rounded-lg border-2 hover:bg-blue-600 hover:border-blue-600 px-4 py-3 my-8 mx-auto flex items-center">
-              Let's Collaborate
+            <button className="w-full text-white rounded-lg bg-gradient-to-r from-violet-600 to-pink-500 hover:from-pink-500 hover:to-yellow-500 px-4 py-3 my-8 mx-auto flex items-center">
+              Subscribe
             </button>
           </form>
         </div>

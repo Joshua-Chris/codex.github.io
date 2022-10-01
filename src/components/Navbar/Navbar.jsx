@@ -25,7 +25,7 @@ const Navbar = () => {
         className={
           color
             ? 'z-10 fixed w-screen sticky top-0 h-[80px] flex text-sm items-center p-5 bg-[#1B1F24] text-white drop-shadow-lg justify-between md:justify-start'
-            : 'z-10 fixed w-screen sticky top-0 h-[80px] flex text-sm items-center p-5 bg-[#4a148c] text-white drop-shadow-lg justify-between md:justify-start'
+            : 'z-10 fixed w-screen sticky top-0 h-[80px] flex text-sm items-center p-5 bg-transparent text-white drop-shadow-lg justify-between md:justify-start'
         }
       >
         <div className="flex z-10">
@@ -60,64 +60,19 @@ const Navbar = () => {
           }
         >
           <Link
-            to="documentation"
+            to="/documentation"
             className="flex justify-center items-center group py-4 text-2xl"
           >
-            Doc{' '}
+            Documentation{' '}
             <span className="invisible duration-75 group-hover:visible">
               <HiChevronRight size={25} className="pl-1 text-gray-400" />
             </span>
           </Link>
           <Link
-            to="versions"
+            to="/apply"
             className="flex justify-center items-center group py-4 text-2xl"
           >
-            Versions{' '}
-            <span className="invisible duration-75 group-hover:visible">
-              <HiChevronRight size={25} className="pl-1 text-gray-400" />
-            </span>
-          </Link>
-          <Link
-            to="codexspace"
-            className="flex justify-center items-center group py-4 text-2xl"
-          >
-            CodeX spaces{' '}
-            <span className="invisible duration-75 group-hover:visible">
-              <HiChevronRight size={25} className="pl-1 text-gray-400" />
-            </span>
-          </Link>
-          <Link
-            to="extensions"
-            className="flex justify-center items-center group py-4 text-2xl"
-          >
-            Extensions{' '}
-            <span className="invisible duration-75 group-hover:visible">
-              <HiChevronRight size={25} className="pl-1 text-gray-400" />
-            </span>
-          </Link>
-          <Link
-            to="codereview"
-            className="flex justify-center items-center group py-4 text-2xl"
-          >
-            Code review{' '}
-            <span className="invisible duration-75 group-hover:visible">
-              <HiChevronRight size={25} className="pl-1 text-gray-400" />
-            </span>
-          </Link>
-          <Link
-            to="about"
-            className="flex justify-center items-center group py-4 text-2xl"
-          >
-            About{' '}
-            <span className="invisible duration-75 group-hover:visible">
-              <HiChevronRight size={25} className="pl-1 text-gray-400" />
-            </span>
-          </Link>
-          <Link
-            to="join"
-            className="flex justify-center items-center group py-4 text-2xl"
-          >
-            Join{' '}
+            Get Started{' '}
             <span className="invisible duration-75 group-hover:visible">
               <HiChevronRight size={25} className="pl-1 text-gray-400" />
             </span>

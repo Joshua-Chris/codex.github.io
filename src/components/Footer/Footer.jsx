@@ -15,7 +15,7 @@ const Footer = () => {
             Get product updates, company news, and more.
           </p>
           <button className="btn bg-transparent mx-0 hover:shadow-transparent font-bold hover:font-normal text-blue-400 border-gray-300 border-[1px]">
-            Subscribe
+            <Link to="/apply">Subscribe</Link>
           </button>
         </div>
         <div className="flex flex-col sm:flex-row items-center sm:items-start justify-around gap-5">

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { HiChevronRight, HiArrowRight } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 // import HeroBg from '../../assets/drawing-tablet.png';
 import HeroImg from '../../assets/hero-img.PNG';
 
@@ -16,7 +17,7 @@ const Hero = () => {
           CodeX brings to light blazing fast cloud developer environments.
         </h1>
         <button onMouseOver={mouseOver} onMouseOut={mouseOver}>
-          Get Started
+          <Link to="/apply">Get Started</Link>
           {!btnAngle ? (
             <HiChevronRight size={25} className="pl-1" />
           ) : (
