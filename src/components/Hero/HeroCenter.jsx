@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { FiChevronRight, FiArrowRight } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 const HeroCenter = () => {
   const [icon, setIcon] = useState(false);
@@ -22,21 +23,25 @@ const HeroCenter = () => {
           within your organization or with the entire world.
         </p>
         <div className="flex flex-col sm:flex-row">
-          <button
-            onMouseEnter={changeIcon}
-            onMouseLeave={changeIcon}
-            className="btn bg-gradient-to-r from-violet-600 to-pink-500 hover:from-pink-500 hover:to-yellow-500"
-          >
-            Get started{' '}
-            {!icon ? (
-              <FiChevronRight className="text-2xl" />
-            ) : (
-              <FiArrowRight className="text-2xl" />
-            )}
-          </button>
-          <button className="btn bg-transparent text-blue-800 border-gray-300 border-[1px]">
-            See pricing
-          </button>
+          <Link to="/apply">
+            <button
+              onMouseEnter={changeIcon}
+              onMouseLeave={changeIcon}
+              className="btn bg-gradient-to-r from-violet-600 to-pink-500 hover:from-pink-500 hover:to-yellow-500"
+            >
+              Get started{' '}
+              {!icon ? (
+                <FiChevronRight className="text-2xl" />
+              ) : (
+                <FiArrowRight className="text-2xl" />
+              )}
+            </button>
+          </Link>
+          <Link to="/documentation">
+            <button className="btn bg-transparent text-blue-800 border-gray-300 border-[1px]">
+              Documentation
+            </button>
+          </Link>
         </div>
       </div>
     </>
